@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">CarsApp</string>
+    <string name="fordecosport">Ford Ecosport SE</string>
+    <string name="marca">Marca:</string>
+    <string name="modelo">Modelo:</string>
+    <string name="motor">Motor:</string>
+    <string name="color">Color:</string>
 </resources>
