@@ -50,7 +50,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+            app:layout_constraintTop_toBottomOf="@+id/combustible_radio_group" />
 
         <EditText
             android:id="@+id/modelo_edit_text"
@@ -84,6 +84,18 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/modelo_edit_text" />
 
+        <TextView
+            android:id="@+id/textView13"
+            style="@style/Subtitulos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/color"
+            app:layout_constraintBottom_toTopOf="@+id/colores_spinner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.06"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/motor_edit_text" />
+
         <Spinner
             android:id="@+id/colores_spinner"
             android:layout_width="0dp"
@@ -112,19 +124,20 @@
             app:layout_constraintTop_toBottomOf="@+id/colores_spinner" />
 
         <RadioGroup
-            android:id="@+id/radioGroup"
+            android:id="@+id/transmision_radio_group"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="32dp"
+            android:checkedButton="@id/automatico_radio_button"
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView11">
 
             <RadioButton
-                android:id="@+id/automaritico_radio_button"
+                android:id="@+id/automatico_radio_button"
                 style="@style/Texto_Normal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -132,12 +145,12 @@
                 android:text="@string/automatico" />
 
             <RadioButton
-                android:id="@+id/manual_radio_button"
+                android:id="@+id/mecanico_radio_button"
                 style="@style/Texto_Normal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/manual" />
+                android:text="@string/mecanico" />
         </RadioGroup>
 
         <TextView
@@ -150,15 +163,16 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.06"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+            app:layout_constraintTop_toBottomOf="@+id/transmision_radio_group" />
 
         <RadioGroup
-            android:id="@+id/radioGroup2"
+            android:id="@+id/combustible_radio_group"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="32dp"
+            android:checkedButton="@id/gasolina_radio_button"
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -189,18 +203,6 @@
                 android:text="@string/electrico" />
 
         </RadioGroup>
-
-        <TextView
-            android:id="@+id/textView13"
-            style="@style/Subtitulos"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/color"
-            app:layout_constraintBottom_toTopOf="@+id/colores_spinner"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.06"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/motor_edit_text" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

@@ -10,9 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CarsApp">
         <activity
+            android:name=".ListVehiculosActivity"
+            android:exported="true">
+        </activity>
+        <activity
             android:name=".RegistroVehiculoActivity"
             android:exported="true">
-            <intent-filter> <!-- indica que se abre esta actividad -->
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -22,7 +26,6 @@
             android:name=".MainActivity"
             android:exported="true"
             android:screenOrientation="portrait">
-
         </activity>
     </application>
 

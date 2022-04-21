@@ -8,14 +8,15 @@
     <string name="registrovehiculo">Registro de Vehículo</string>
     <string name="botonregistrar">Registrar</string>
     <string name="automatico">Automático</string>
-    <string name="manual">Manual</string>
-    <string name="transmision">Tipo de Transmisión</string>
-    <string name="combustible">Tipo de Combustible</string>
+    <string name="mecanico">Mecánico</string>
+    <string name="transmision">Tipo de Transmisión:</string>
+    <string name="combustible">Tipo de Combustible:</string>
     <string name="gasolina">Gasolina</string>
     <string name="diesel">Diesel</string>
     <string name="electrico">Eléctrico</string>
 
     <string-array name="colores">
+        <item>--- Seleccione color ---</item>
         <item>Blanco</item>
         <item>Azul</item>
         <item>Rojo</item>
