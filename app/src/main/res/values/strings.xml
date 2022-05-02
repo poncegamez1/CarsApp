@@ -14,6 +14,7 @@
     <string name="gasolina">Gasolina</string>
     <string name="diesel">Diesel</string>
     <string name="electrico">Eléctrico</string>
+    <string name="modelo2020">2020</string>
 
     <string-array name="colores">
         <item>--- Seleccione color ---</item>

@@ -35,22 +35,23 @@ class RegistroVehiculoActivity : AppCompatActivity() {
             if (colorVehiculoSpinner.selectedItem.toString() == "--- Seleccione color ---")
                 Toast.makeText(this, "Debe seleccionar un color", Toast.LENGTH_SHORT).show()
 
-
             if (marcaEditText.text.isEmpty() || modeloEditText.text.isEmpty() || motorEditText.text.isEmpty() || colorVehiculoSpinner.selectedItem.toString() == "--- Seleccione color ---")
                 Toast.makeText(this, "Debe diligenciar todos los campos", Toast.LENGTH_LONG).show()
             else{
                val marca: String = marcaEditText.text.toString()
-               val modelo: Int = modeloEditText.text.toString().toInt()
-               val motor: Int = motorEditText.text.toString().toInt()
+               val modelo: String = modeloEditText.text.toString()
+               val motor: String = motorEditText.text.toString()
                val colorVehiculo: String = colorVehiculoSpinner.selectedItem.toString()
                val transmision: String = if (automaticoRadioButton.isChecked) getString(R.string.automatico) else getString(R.string.mecanico)
                val combustible = String
-                    if (gasolinaRadioButton.isChecked)
+                   if (gasolinaRadioButton.isChecked)
                         getString(R.string.gasolina)
                     if (dieselRadioButton.isChecked)
                         getString(R.string.diesel)
                     if (electricoRadioButton.isChecked)
                         getString(R.string.electrico)
+
+                //val vehiculo = Vehiculo(marca, modelo, motor, colorVehiculo, transmision, combustible, urlPic)
 
                val intent = Intent(this, MainActivity::class.java)
                startActivity(intent)
