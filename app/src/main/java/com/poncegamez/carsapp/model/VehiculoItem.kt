@@ -1,21 +1,22 @@
-package com.poncegamez.carsapp
+package com.poncegamez.carsapp.model
 
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 data class VehiculoItem(
     @SerializedName("color")
-    val color: String,
+    val color: String?,
     @SerializedName("combustible")
-    val combustible: String,
+    val combustible: String?,
     @SerializedName("marca")
-    val marca: String,
+    val marca: String?,
     @SerializedName("modelo")
-    val modelo: String,
+    val modelo: String?,
     @SerializedName("motor")
-    val motor: String,
+    val motor: String?,
     @SerializedName("transmision")
-    val transmision: String,
+    val transmision: String?,
     @SerializedName("urlPic")
-    val urlPic: String
-)
+    val urlPic: String?
+) : Serializable

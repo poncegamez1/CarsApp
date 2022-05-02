@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CarsApp">
         <activity
-            android:name=".ListVehiculosActivity"
+            android:name=".list.ListVehiculosActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,11 +21,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".RegistroVehiculoActivity"
+            android:name=".registro.RegistroVehiculoActivity"
             android:exported="true">
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".detalle.DetalleActivity"
             android:exported="true"
             android:screenOrientation="portrait">
         </activity>

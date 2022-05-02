@@ -1,10 +1,15 @@
-package com.poncegamez.carsapp
+package com.poncegamez.carsapp.list
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.gson.Gson
+import com.poncegamez.carsapp.R
+import com.poncegamez.carsapp.detalle.DetalleActivity
+import com.poncegamez.carsapp.model.Vehiculo
+import com.poncegamez.carsapp.model.VehiculoItem
 
 class ListVehiculosActivity : AppCompatActivity() {
 
@@ -19,7 +24,7 @@ class ListVehiculosActivity : AppCompatActivity() {
         vehiculosRecyclerView = findViewById(R.id.vehiculos_recycler_view)
 
         listaVehiculos = loadMockVehiculosFromJson()
-        vehiculosAdapter = VehiculosAdapter(listaVehiculos)
+        vehiculosAdapter = VehiculosAdapter(listaVehiculos, onItemClicked = {onVehiculoClicked(it)})
 
         vehiculosRecyclerView.apply {
             layoutManager = LinearLayoutManager(context)
@@ -27,6 +32,12 @@ class ListVehiculosActivity : AppCompatActivity() {
             setHasFixedSize(false)
         }
 
+    }
+
+    private fun onVehiculoClicked(vehiculo: VehiculoItem) {
+        val intent = Intent(this, DetalleActivity::class.java)
+        intent.putExtra("vehiculo", vehiculo)
+        startActivity(intent)
     }
 
     private fun loadMockVehiculosFromJson(): ArrayList<VehiculoItem> {

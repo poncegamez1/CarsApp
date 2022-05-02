@@ -1,4 +1,4 @@
-package com.poncegamez.carsapp
+package com.poncegamez.carsapp.list
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,10 +6,15 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.poncegamez.carsapp.VehiculosAdapter.VehiculoViewHolder
+import com.poncegamez.carsapp.R
+import com.poncegamez.carsapp.list.VehiculosAdapter.VehiculoViewHolder
+import com.poncegamez.carsapp.model.VehiculoItem
 import com.squareup.picasso.Picasso
 
-class VehiculosAdapter(private val vehiculosList: ArrayList<VehiculoItem>) : RecyclerView.Adapter<VehiculoViewHolder>() {
+class VehiculosAdapter(
+    private val vehiculosList: ArrayList<VehiculoItem>,
+    private val onItemClicked: (VehiculoItem) -> Unit)
+    : RecyclerView.Adapter<VehiculoViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): VehiculoViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.card_view_vehiculo_item, parent, false)
@@ -18,6 +23,7 @@ class VehiculosAdapter(private val vehiculosList: ArrayList<VehiculoItem>) : Rec
 
     override fun onBindViewHolder(holder: VehiculoViewHolder, position: Int) {
         val vehiculo = vehiculosList[position]
+        holder.itemView.setOnClickListener { onItemClicked(vehiculosList[position]) }
         holder.bind(vehiculo)
     }
 

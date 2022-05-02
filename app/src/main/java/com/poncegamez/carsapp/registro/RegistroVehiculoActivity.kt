@@ -1,10 +1,12 @@
-package com.poncegamez.carsapp
+package com.poncegamez.carsapp.registro
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.*
+import com.poncegamez.carsapp.detalle.DetalleActivity
+import com.poncegamez.carsapp.R
 
 class RegistroVehiculoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -42,7 +44,9 @@ class RegistroVehiculoActivity : AppCompatActivity() {
                val modelo: String = modeloEditText.text.toString()
                val motor: String = motorEditText.text.toString()
                val colorVehiculo: String = colorVehiculoSpinner.selectedItem.toString()
-               val transmision: String = if (automaticoRadioButton.isChecked) getString(R.string.automatico) else getString(R.string.mecanico)
+               val transmision: String = if (automaticoRadioButton.isChecked) getString(R.string.automatico) else getString(
+                   R.string.mecanico
+               )
                val combustible = String
                    if (gasolinaRadioButton.isChecked)
                         getString(R.string.gasolina)
@@ -53,7 +57,7 @@ class RegistroVehiculoActivity : AppCompatActivity() {
 
                 //val vehiculo = Vehiculo(marca, modelo, motor, colorVehiculo, transmision, combustible, urlPic)
 
-               val intent = Intent(this, MainActivity::class.java)
+               val intent = Intent(this, DetalleActivity::class.java)
                startActivity(intent)
             }
 
