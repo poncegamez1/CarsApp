@@ -1,0 +1,56 @@
+[
+  {
+    "marca" : "Ford Ecosport SE",
+    "modelo" : "2020",
+    "motor" : "2.000 CC",
+    "color" : "Blanco",
+    "transmision" : "Automático",
+    "combustible" : "Gasolina",
+    "urlPic" : "https://www.elcarrocolombiano.com/wp-content/uploads/2018/02/20180216-FORD-ECOSPORT-SE-1.5L-2018-COLOMBIA-PRECIO-01.jpg"
+  },
+  {
+    "marca" : "Mazda MX5",
+    "modelo" : "2018",
+    "motor" : "2.000 CC",
+    "color" : "Rojo",
+    "transmision" : "Automático",
+    "combustible" : "Gasolina",
+    "urlPic" : "https://www.pruebaderuta.com/wp-content/uploads/2018/03/mazda-mx5-6-620x264.jpg"
+  },
+  {
+    "marca": "Toyota 4Runner",
+    "modelo": "2017",
+    "motor": "3.500 CC",
+    "color": "Gris",
+    "transmision": "Automático",
+    "combustible": "Diesel",
+    "urlPic": "https://img.motoryracing.com/noticias/portada/23000/23308-n.jpg"
+  },
+  {
+    "marca": "Ford Fusion",
+    "modelo": "2020",
+    "motor": "2.000 CC",
+    "color": "Blanco",
+    "transmision": "Automático",
+    "combustible": "Gasolina",
+    "urlPic": "https://acroadtrip.blob.core.windows.net/publicaciones-imagenes/Small/ford/fusion/mx/RT_PU_588cec9df9f74d13868be01952018a26.jpg"
+  },
+  {
+    "marca": "Audi TT",
+    "modelo": "2017",
+    "motor": "2.000 CC",
+    "color": "Negro",
+    "transmision": "Mecánico",
+    "combustible": "Gasolina",
+    "urlPic": "https://www.autonocion.com/wp-content/uploads/2015/07/Audi-TTS-Coup%C3%A9-por-ABT-1.jpg"
+  },
+  {
+    "marca": "BYD e2",
+    "modelo": "2022",
+    "motor": "70 kW",
+    "color": "Rojo",
+    "transmision": "Automático",
+    "combustible": "Eléctrico",
+    "urlPic": "https://feria.puromotor.com/wp-content/uploads/2020/07/aaad85_c797a76369834f9a8a3be9fbed46dd53mv2-681x466.jpg"
+  }
+]
