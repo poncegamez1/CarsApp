@@ -25,6 +25,7 @@
         <item>Gris</item>
         <item>Negro</item>
     </string-array>
+
     <string name="notificaciones">Notificaciones</string>
     <string name="activar_notificaciones">Activar Notificaciones</string>
     <string name="activar_vibracion">Activar Vibración</string>
@@ -35,5 +36,5 @@
     <string name="title_list">Lista</string>
     <string name="title_register">Registro</string>
     <string name="title_preference">Preferencias</string>
-
+    <string name="tittle_detail">Detalle</string>
 </resources>

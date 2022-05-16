@@ -30,6 +30,13 @@ class VehiculosAdapter(
         return vehiculosList.size
     }
 
+    fun appendItems(newItems: ArrayList<VehiculoItem>) {
+        vehiculosList.clear()
+        vehiculosList.addAll(newItems)
+        notifyDataSetChanged()
+    }
+
+
     class VehiculoViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
         private var nombreTextView: TextView = itemView.findViewById(R.id.nombre_text_view)
         private var modeloTextView: TextView = itemView.findViewById(R.id.modelo_text_view)
