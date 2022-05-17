@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.poncegamez.carsappfrag.databinding.FragmentDetailBinding
 import com.squareup.picasso.Picasso
@@ -42,6 +43,10 @@ class DetailFragment : Fragment() {
             transmisionDetalleTextView.text = vehiculo.transmision
             combustibleDetalleTextView.text = vehiculo.combustible
             Picasso.get().load(vehiculo.urlPic).into(imagenDetalleImageView)
+
+            mapButton.setOnClickListener {
+                findNavController().navigate(DetailFragmentDirections.actionDetailFragmentToMapsFragment(posicionPunto = vehiculo))
+            }
         }
     }
 

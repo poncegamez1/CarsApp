@@ -6,7 +6,9 @@
     "color" : "Blanco",
     "transmision" : "Automático",
     "combustible" : "Gasolina",
-    "urlPic" : "https://www.elcarrocolombiano.com/wp-content/uploads/2018/02/20180216-FORD-ECOSPORT-SE-1.5L-2018-COLOMBIA-PRECIO-01.jpg"
+    "urlPic" : "https://www.elcarrocolombiano.com/wp-content/uploads/2018/02/20180216-FORD-ECOSPORT-SE-1.5L-2018-COLOMBIA-PRECIO-01.jpg",
+    "latitud" : 3.43722,
+    "longitud" : -76.5225
   },
   {
     "marca" : "Mazda MX5",
@@ -15,7 +17,9 @@
     "color" : "Rojo",
     "transmision" : "Automático",
     "combustible" : "Gasolina",
-    "urlPic" : "https://www.pruebaderuta.com/wp-content/uploads/2018/03/mazda-mx5-6-620x264.jpg"
+    "urlPic" : "https://www.pruebaderuta.com/wp-content/uploads/2018/03/mazda-mx5-6-620x264.jpg",
+    "latitud" : 6.25184,
+    "longitud" : -75.56359
   },
   {
     "marca": "Toyota 4Runner",
@@ -24,7 +28,9 @@
     "color": "Gris",
     "transmision": "Automático",
     "combustible": "Diesel",
-    "urlPic": "https://img.motoryracing.com/noticias/portada/23000/23308-n.jpg"
+    "urlPic": "https://img.motoryracing.com/noticias/portada/23000/23308-n.jpg",
+    "latitud" : 10.96854,
+    "longitud" : -74.78132
   },
   {
     "marca": "Ford Fusion",
@@ -33,7 +39,9 @@
     "color": "Blanco",
     "transmision": "Automático",
     "combustible": "Gasolina",
-    "urlPic": "https://acroadtrip.blob.core.windows.net/publicaciones-imagenes/Small/ford/fusion/mx/RT_PU_588cec9df9f74d13868be01952018a26.jpg"
+    "urlPic": "https://acroadtrip.blob.core.windows.net/publicaciones-imagenes/Small/ford/fusion/mx/RT_PU_588cec9df9f74d13868be01952018a26.jpg",
+    "latitud" : 4.60971,
+    "longitud" : -74.08175
   },
   {
     "marca": "Audi TT",
@@ -42,7 +50,9 @@
     "color": "Negro",
     "transmision": "Mecánico",
     "combustible": "Gasolina",
-    "urlPic": "https://www.autonocion.com/wp-content/uploads/2015/07/Audi-TTS-Coup%C3%A9-por-ABT-1.jpg"
+    "urlPic": "https://www.autonocion.com/wp-content/uploads/2015/07/Audi-TTS-Coup%C3%A9-por-ABT-1.jpg",
+    "latitud" : 10.39972,
+    "longitud" : -75.51444
   },
   {
     "marca": "BYD e2",
@@ -51,6 +61,8 @@
     "color": "Rojo",
     "transmision": "Automático",
     "combustible": "Eléctrico",
-    "urlPic": "https://feria.puromotor.com/wp-content/uploads/2020/07/aaad85_c797a76369834f9a8a3be9fbed46dd53mv2-681x466.jpg"
+    "urlPic": "https://feria.puromotor.com/wp-content/uploads/2020/07/aaad85_c797a76369834f9a8a3be9fbed46dd53mv2-681x466.jpg",
+    "latitud" : 11.24079,
+    "longitud" : -74.19904
   }
 ]

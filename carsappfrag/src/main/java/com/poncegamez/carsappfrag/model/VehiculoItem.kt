@@ -18,5 +18,9 @@ data class VehiculoItem(
     @SerializedName("transmision")
     val transmision: String?,
     @SerializedName("urlPic")
-    val urlPic: String?
+    val urlPic: String?,
+    @SerializedName("latitud")
+    val latitud: String?,
+    @SerializedName("longitud")
+    val longitud: String?
 ) : Serializable

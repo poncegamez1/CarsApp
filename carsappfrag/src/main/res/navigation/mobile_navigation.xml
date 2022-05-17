@@ -25,9 +25,21 @@
         <argument
             android:name="vehiculo"
             app:argType="com.poncegamez.carsappfrag.model.VehiculoItem" />
+        <action
+            android:id="@+id/action_detailFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
     </fragment>
     <fragment
         android:id="@+id/navigation_preferences"
         android:name="com.poncegamez.carsappfrag.preference.SettingsFragment"
         android:label="@string/title_preference" />
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.poncegamez.carsappfrag.maps.MapsFragment"
+        android:label="@string/tittle_ubicacion"
+        tools:layout="@layout/fragment_maps" >
+        <argument
+            android:name="posicionPunto"
+            app:argType="com.poncegamez.carsappfrag.model.VehiculoItem" />
+    </fragment>
 </navigation>
