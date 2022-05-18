@@ -1,3 +1,29 @@
 <resources>
     <string name="app_name">CarsApp</string>
+    <string name="fordecosport">Ford Ecosport SE</string>
+    <string name="marca">Marca:</string>
+    <string name="modelo">Modelo:</string>
+    <string name="motor">Motor:</string>
+    <string name="color">Color:</string>
+    <string name="registrovehiculo">Registro de Vehículo</string>
+    <string name="botonregistrar">Registrar</string>
+    <string name="automatico">Automático</string>
+    <string name="mecanico">Mecánico</string>
+    <string name="transmision">Tipo de Transmisión:</string>
+    <string name="combustible">Tipo de Combustible:</string>
+    <string name="gasolina">Gasolina</string>
+    <string name="diesel">Diesel</string>
+    <string name="electrico">Eléctrico</string>
+    <string name="modelo2020">2020</string>
+
+    <string-array name="colores">
+        <item>--- Seleccione color ---</item>
+        <item>Blanco</item>
+        <item>Azul</item>
+        <item>Rojo</item>
+        <item>Verde</item>
+        <item>Gris</item>
+        <item>Negro</item>
+    </string-array>
+
 </resources>
