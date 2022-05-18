@@ -1,4 +1,4 @@
-package com.poncegamez.carsappfrag.detail
+package com.poncegamez.carsappfrag.ui.detail
 
 import androidx.lifecycle.ViewModel
 

@@ -18,7 +18,7 @@
             android:value="${MAPS_API_KEY}" />
 
         <activity
-            android:name=".bottom.BottomActivity"
+            android:name="com.poncegamez.carsappfrag.ui.bottom.BottomActivity"
             android:exported="true"
             android:label="@string/title_activity_bottom">
             <intent-filter>
@@ -28,7 +28,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".main.MainActivity"
+            android:name="com.poncegamez.carsappfrag.ui.main.MainActivity"
             android:exported="true" />
     </application>
 

@@ -1,9 +1,8 @@
-package com.poncegamez.carsappfrag.preference
+package com.poncegamez.carsappfrag.ui.preference
 
 import android.os.Bundle
 import androidx.preference.PreferenceFragmentCompat
 import com.poncegamez.carsappfrag.R
-import com.poncegamez.carsappfrag.main.MainActivity
 
 class SettingsFragment : PreferenceFragmentCompat() {
 

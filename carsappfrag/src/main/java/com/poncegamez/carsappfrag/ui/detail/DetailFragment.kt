@@ -1,4 +1,4 @@
-package com.poncegamez.carsappfrag.detail
+package com.poncegamez.carsappfrag.ui.detail
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

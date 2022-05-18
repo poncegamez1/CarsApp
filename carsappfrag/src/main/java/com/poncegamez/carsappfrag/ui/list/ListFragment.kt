@@ -1,4 +1,4 @@
-package com.poncegamez.carsappfrag.list
+package com.poncegamez.carsappfrag.ui.list
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -29,10 +29,11 @@ class ListFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        //listViewModel.loadMockVehiculosFromJson(context?.assets?.open("vehiculos.json"))
 
-        listViewModel.loadMockVehiculosFromJson(context?.assets?.open("vehiculos.json"))
+        listViewModel.getVehiculosFromServer()
 
-        listViewModel.onVehiculosLoaded.observe(viewLifecycleOwner, { result ->
+        listViewModel.onVehiculosLoaded.observe(viewLifecycleOwner, {result ->
             onVehiculosLoadedSubscribe(result)
         })
 

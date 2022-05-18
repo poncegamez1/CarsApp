@@ -1,4 +1,4 @@
-package com.poncegamez.carsappfrag.bottom
+package com.poncegamez.carsappfrag.ui.bottom
 
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView

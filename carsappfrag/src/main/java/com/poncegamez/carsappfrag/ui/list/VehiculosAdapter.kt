@@ -1,4 +1,4 @@
-package com.poncegamez.carsappfrag.list
+package com.poncegamez.carsappfrag.ui.list
 
 import android.view.LayoutInflater
 import android.view.View
