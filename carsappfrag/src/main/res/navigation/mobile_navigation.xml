@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/navigation_list">
+    app:startDestination="@id/splashFragment">
 
     <fragment
         android:id="@+id/navigation_list"
@@ -41,5 +41,38 @@
         <argument
             android:name="posicionPunto"
             app:argType="com.poncegamez.carsappfrag.model.VehiculoItem" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.poncegamez.carsappfrag.ui.splash.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_navigation_list"
+            app:destination="@id/navigation_list" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.poncegamez.carsappfrag.ui.login.LoginFragment"
+        android:label="@string/tittle_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registroFragment"
+            app:destination="@id/registroFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_navigation_list"
+            app:destination="@id/navigation_list" />
+    </fragment>
+    <fragment
+        android:id="@+id/registroFragment"
+        android:name="com.poncegamez.carsappfrag.ui.registro.RegistroFragment"
+        android:label="@string/tittle_registro"
+        tools:layout="@layout/fragment_registro" >
+        <action
+            android:id="@+id/action_registroFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
     </fragment>
 </navigation>

@@ -38,4 +38,14 @@
     <string name="title_preference">Preferencias</string>
     <string name="tittle_detail">Detalle</string>
     <string name="tittle_ubicacion">Ubicación</string>
+    <string name="tittle_login">Login</string>
+    <string name="tittle_registro">Registro</string>
+    <string name="correo_electronico">Correo Electrónico</string>
+    <string name="password">Contraseña</string>
+    <string name="boton_iniciar_sesion">Iniciar Sesión</string>
+    <string name="CarsApp">CarsApp</string>
+    <string name="nombre_completo">Nombre Completo</string>
+    <string name="crear_cuenta">Crear Cuenta</string>
+    <string name="repetir_contrasena">Repita Contraseña</string>
+    <string name="opcion_registrarse"><u>Si no tienes cuenta Regístrate</u></string>
 </resources>
