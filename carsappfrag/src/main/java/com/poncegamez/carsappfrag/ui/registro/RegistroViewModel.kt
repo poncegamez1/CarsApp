@@ -6,7 +6,9 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
+import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
+import com.poncegamez.carsappfrag.model.User
 
 class RegistroViewModel : ViewModel() {
 
@@ -29,6 +31,19 @@ class RegistroViewModel : ViewModel() {
                 }
             }
 
+    }
+
+    fun createUserAccount(email: String, nombre: String) {
+        val db = Firebase.firestore
+        val user = User(id= "0", email= email, nombre= nombre)
+        db.collection("users")
+            .add(user)
+            .addOnSuccessListener {
+
+            }
+            .addOnFailureListener {
+
+            }
     }
 
 }

@@ -14,11 +14,13 @@ class RegistroFragment : Fragment() {
 
     private lateinit var registerviewModel: RegistroViewModel
     private lateinit var registerBinding: FragmentRegistroBinding
+    private lateinit var email: String
+    private lateinit var nombre: String
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         registerBinding = FragmentRegistroBinding.inflate(inflater, container, false)
         registerviewModel = ViewModelProvider(this)[RegistroViewModel::class.java]
 
@@ -33,6 +35,7 @@ class RegistroFragment : Fragment() {
         result?.let { isRegister ->
             if (isRegister) {
                 Toast.makeText(context, "Registro exitoso", Toast.LENGTH_SHORT).show()
+                registerviewModel.createUserAccount(email, nombre)
                 findNavController().navigate(RegistroFragmentDirections.actionRegistroFragmentToLoginFragment())
             } else
                 Toast.makeText(context, "Error en el registro", Toast.LENGTH_SHORT).show()
@@ -43,8 +46,8 @@ class RegistroFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         with(registerBinding){
             crearCuentaButton.setOnClickListener{
-                val email = emailEditText.text.toString()
-                val nombre = nombreInputText.text.toString()
+                email = emailEditText.text.toString()
+                nombre = nombreInputText.text.toString()
                 val password = passwordEditText.text.toString()
 
                 registerviewModel.register(email, password)

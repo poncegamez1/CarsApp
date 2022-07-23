@@ -23,17 +23,19 @@ class SplashFragment : Fragment() {
 
         splashViewModel = ViewModelProvider(this)[SplashViewModel::class.java]
 
-        splashViewModel.onUserLoggedIn.observe(viewLifecycleOwner, {result ->
-            onUserLoggedInSubscribe(result)
+        splashViewModel.onUserLogged.observe(viewLifecycleOwner, {result ->
+            onUserLoggedSubscribe(result)
         })
 
         return  splashBinding.root
     }
 
-    private fun onUserLoggedInSubscribe(result: Boolean?) {
-        result?.let{ isUserLoggedIn ->
-            if(isUserLoggedIn)
-                findNavController().navigate(SplashFragmentDirections.actionSplashFragmentToNavigationList())
+    private fun onUserLoggedSubscribe(result: Boolean?) {
+        result?.let{ isUserLogged ->
+            if(isUserLogged)
+                findNavController().navigate(SplashFragmentDirections.actionSplashFragmentToLoginFragment())
+            else
+                findNavController().navigate(SplashFragmentDirections.actionSplashFragmentToLoginFragment())
         }
 
     }

@@ -66,7 +66,7 @@ class LoginFragment : Fragment() {
                         loginviewModel.login(email, password)
                     }
             }
-            registerTextView.setOnClickListener {
+            registrarseTextView.setOnClickListener {
                 findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToRegistroFragment())
             }
         }
