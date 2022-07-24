@@ -43,7 +43,6 @@ class ListFragment : Fragment() {
             layoutManager = LinearLayoutManager(context)
             adapter = vehiculosAdapter
             setHasFixedSize(false)
-
         }
     }
 

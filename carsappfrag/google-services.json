@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "286960384350",
+    "project_id": "carsapp-350501",
+    "storage_bucket": "carsapp-350501.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:286960384350:android:10e7b4136e5b2cc7baf7cf",
+        "android_client_info": {
+          "package_name": "com.poncegamez.carsappfrag"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "286960384350-00eotleve016ocee9uo65nnu11siq0nf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJ-1JuFSBtJ7dyCF78wuGIrudBWv3uR7I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "286960384350-00eotleve016ocee9uo65nnu11siq0nf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
